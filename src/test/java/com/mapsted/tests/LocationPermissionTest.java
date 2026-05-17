@@ -27,6 +27,7 @@ public class LocationPermissionTest extends BaseTest {
         // Step 3: Validate screen
         Assert.assertTrue(locationPage.isLocationPermissionScreenDisplayed(),
                 "Location screen not displayed");
+        //this specificcall made for feature branch
 
         // Step 4: Click Enable
         locationPage.clickEnable();

@@ -62,8 +62,7 @@ public class BaseTest {
             .setUdid("7e7dfb26")
             .setAppPackage("com.mapsted.demo")
             .setAppActivity("com.mapsted.demo.activities.LoginActivity")
-            .setNoReset(true) // Keeps session alive
-            .setAutomationName("UiAutomator2");
+            .setNoReset(true) ;// Keeps session alive
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

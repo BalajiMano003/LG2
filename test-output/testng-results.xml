@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="9" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-23T16:24:52 IST" name="Appium Suite" finished-at="2026-04-23T16:27:12 IST" duration-ms="140341">
+    <groups>
+    </groups>
+    <test started-at="2026-04-23T16:24:52 IST" name="Mapsted Test" finished-at="2026-04-23T16:27:12 IST" duration-ms="140341">
+      <class name="com.mapsted.tests.PropertyListingTest">
+        <test-method signature="validateScreenAndTitle()[pri:1, instance:com.mapsted.tests.PropertyListingTest@20d525]" started-at="2026-04-23T16:25:11 IST" name="validateScreenAndTitle" finished-at="2026-04-23T16:25:12 IST" duration-ms="639" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateScreenAndTitle -->
+        <test-method signature="fetchAndPrintAllProperties()[pri:2, instance:com.mapsted.tests.PropertyListingTest@20d525]" started-at="2026-04-23T16:25:12 IST" name="fetchAndPrintAllProperties" finished-at="2026-04-23T16:26:09 IST" duration-ms="56816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fetchAndPrintAllProperties -->
+        <test-method signature="validatePropertiesMissingAddress()[pri:3, instance:com.mapsted.tests.PropertyListingTest@20d525]" started-at="2026-04-23T16:26:09 IST" name="validatePropertiesMissingAddress" finished-at="2026-04-23T16:26:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePropertiesMissingAddress -->
+        <test-method signature="downloadFirstPropertyAndValidateTime()[pri:4, instance:com.mapsted.tests.PropertyListingTest@20d525]" started-at="2026-04-23T16:26:09 IST" name="downloadFirstPropertyAndValidateTime" finished-at="2026-04-23T16:27:12 IST" duration-ms="63104" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: (//androidx.cardview.widget.CardView[@resource-id='com.mapsted.demo:id/card'])[1]//android.widget.TextView[@resource-id='com.mapsted.demo:id/tvDownloadStatus'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.mapsted.demo.activities..., appium:appPackage: com.mapsted.demo, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mapsted.demo.activities..., appPackage: com.mapsted.demo, automationName: UiAutomator2, deviceName: Android Device, noReset: true, platformName: ANDROID, udid: 7e7dfb26}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2012K11I, appium:deviceName: 7e7dfb26, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7e7dfb26, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7e7dfb26, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cf054186-ac15-4f0a-ba13-f22707f25e66]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//androidx.cardview.widget.CardView[@resource-id='com.mapsted.demo:id/card'])[1]//android.widget.TextView[@resource-id='com.mapsted.demo:id/tvDownloadStatus'] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.mapsted.demo.activities..., appium:appPackage: com.mapsted.demo, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.mapsted.demo.activities..., appPackage: com.mapsted.demo, automationName: UiAutomator2, deviceName: Android Device, noReset: true, platformName: ANDROID, udid: 7e7dfb26}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Xiaomi, appium:deviceModel: M2012K11I, appium:deviceName: 7e7dfb26, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2400, appium:deviceUDID: 7e7dfb26, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: true, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 80, appium:takesScreenshot: true, appium:udid: 7e7dfb26, appium:viewportRect: {height: 2320, left: 0, top: 80, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cf054186-ac15-4f0a-ba13-f22707f25e66
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.mapsted.tests.PropertyListingTest.downloadFirstPropertyAndValidateTime(PropertyListingTest.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- downloadFirstPropertyAndValidateTime -->
+      </class> <!-- com.mapsted.tests.PropertyListingTest -->
+      <class name="com.mapsted.tests.LoginPageValidationTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.mapsted.tests.LoginPageValidationTest@7bedc48a]" started-at="2026-04-23T16:24:46 IST" name="setup" finished-at="2026-04-23T16:24:52 IST" duration-ms="5354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testUIElementsVisibility()[pri:1, instance:com.mapsted.tests.LoginPageValidationTest@7bedc48a]" started-at="2026-04-23T16:24:52 IST" name="testUIElementsVisibility" finished-at="2026-04-23T16:24:53 IST" duration-ms="928" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUIElementsVisibility -->
+        <test-method signature="testInvalidLoginErrorMessage()[pri:2, instance:com.mapsted.tests.LoginPageValidationTest@7bedc48a]" started-at="2026-04-23T16:24:53 IST" name="testInvalidLoginErrorMessage" finished-at="2026-04-23T16:24:59 IST" depends-on-methods="com.mapsted.tests.LoginPageValidationTest.testUIElementsVisibility" duration-ms="5965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLoginErrorMessage -->
+        <test-method signature="testSuccessfulLogin()[pri:3, instance:com.mapsted.tests.LoginPageValidationTest@7bedc48a]" started-at="2026-04-23T16:24:59 IST" name="testSuccessfulLogin" finished-at="2026-04-23T16:25:11 IST" duration-ms="12771" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mapsted.tests.LoginPageValidationTest@7bedc48a]" started-at="2026-04-23T16:27:12 IST" name="tearDown" finished-at="2026-04-23T16:27:12 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mapsted.tests.LoginPageValidationTest -->
+    </test> <!-- Mapsted Test -->
+  </suite> <!-- Appium Suite -->
+</testng-results>

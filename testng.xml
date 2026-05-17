@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Appium Suite">
+    <test name="Mapsted Test">
+        <classes>
+    
+    <class name="com.mapsted.tests.LoginPageValidationTest"/>
+    <class name="com.mapsted.tests.PropertyListingTest"/>
+</classes>
+    </test>
+</suite>

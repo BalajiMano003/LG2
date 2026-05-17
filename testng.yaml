@@ -1,0 +1,8 @@
+name: Appium Suite
+configFailurePolicy: skip
+tests:
+  - name: Mapsted Test
+  classes:
+    - com.mapsted.tests.LoginPageValidationTest
+    - com.mapsted.tests.PropertyListingTest
+
